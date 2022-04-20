@@ -1,0 +1,100 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+  font-size: 62.5%;
+} 
+
+body{
+  font-family: "Source Serif Pro";
+  font-size: 1.6rem;
+  background-color: gray;
+  margin-top: 4%;
+}
+
+h1{
+  font-size: 4.5rem;
+}
+
+.name{
+  font-size: 4rem;
+}
+
+.drinkInfo{
+  float:left;
+  width: 50%;
+  height: 600px;
+}
+
+.search{
+  padding: 0 5% 5%;
+}
+
+.details{
+  float:left;
+  padding:0 5% 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pics{
+  float:left;
+  width: 50%;
+}
+
+.pics img{
+  display: block;
+  margin: auto;
+  height:700px;
+}
+
+.left{
+  float:left;
+  text-align: right;
+  margin-top: 100px;
+  padding-right: 5%;
+  width:50%;
+}
+
+.left img{
+  height:100px;
+  transition: height 1s .25s;
+}
+
+.left img:hover{
+  height:110px;
+}
+
+.right{
+  float: left;
+  text-align: left;
+  margin-top: 100px;
+  padding-left: 5%;
+  width: 50%;
+}
+
+.right img{
+  height:100px;
+  transition: height 1s .25s;
+}
+
+.right img:hover{
+  height:110px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
