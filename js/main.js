@@ -1,6 +1,8 @@
 //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
 document.getElementById("prev").hidden = true
 document.getElementById("next").hidden = true
+document.querySelector(".ingredients").hidden = true
+document.querySelector(".instructions").hidden = true
 
 let current = 0
 let listCount = 0
@@ -52,6 +54,8 @@ function getDrink(){
 
     document.getElementById("prev").hidden = false
     document.getElementById("next").hidden = false
+    document.querySelector(".ingredients").hidden = false
+    document.querySelector(".instructions").hidden = false
 
     })
     .catch(err => {

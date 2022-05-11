@@ -12,6 +12,7 @@
 /*******************************************/
 html{
   font-size: 62.5%;
+  color: #181b1f;;
 } 
 
 body{
@@ -27,7 +28,15 @@ h1{
 
 .name{
   font-size: 4rem;
+
 }
+
+.ingredients, .instructions{
+  padding-top: 10px;
+  border-top: solid black 3px;
+  font-size: 2.2rem;
+}
+
 
 .drinkInfo{
   float:left;
@@ -35,10 +44,70 @@ h1{
   height: 600px;
 }
 
+/* Search Bar*/
+
 .search{
   padding: 0 5% 5%;
 }
 
+.custom-field {
+  font-size: 14px;
+  position: relative;
+  --field-padding: 10px;
+  border-top: 20px solid transparent;
+}
+
+.custom-field input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 14px;
+  padding: var(--field-padding);
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  left: 12px;
+  top: 10px;  
+  transform: translateY(-50%);
+  width: calc(100% - 24px);  
+  color: #aaa;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+  transition: 
+  top 0.3s ease,
+  color 0.3s ease,
+  font-size 0.3s ease;
+}
+
+.custom-field input:focus + .placeholder, .custom-field input:valid + .placeholder {
+  top: -20px;
+  font-size: 15px;
+  color: #222;
+}
+
+#search {
+  height: 37px;
+  padding: 9px;
+  background: #272d33;
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  border-left: none;
+  cursor: pointer;
+}
+
+/**************/
 .details{
   float:left;
   padding:0 5% 5%;

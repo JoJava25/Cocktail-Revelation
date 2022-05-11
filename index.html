@@ -13,22 +13,26 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<section class="drinkInfo">
 			<section class ="search">
 				<h1>Discover New Cocktails</h1>
-				<input type="text" name="" value="">
-				<button type="button" name="button" id="search">Search Cocktails</button>
+				<label class="custom-field">
+					<input type="text" name="" value="" required>
+					<span class="placeholder">Enter Drink</span>
+					<button type="submit" id="search"><i class="fa fa-search"></i></button>
+				</label>
 			</section>
 
 			<section class="details">
 				<h2 class="name"></h2>
 
-				<h3>Ingredients</h3>
+				<h3 class="ingredients">Ingredients</h3>
 				<ul id = "ing"></ul>
 
-				<h3>Instructions</h3>
+				<h3 class="instructions">Instructions</h3>
 				<p id = "instruct"></p>
 			</section>
 		</section>
