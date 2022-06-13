@@ -58,9 +58,11 @@ function getDrink(){
         }else{}
     
     })
-    
+
     document.querySelector(".ingredients").hidden = false
     document.querySelector(".instructions").hidden = false
+
+
     function delayShow(){
         document.getElementById("prev").hidden = false
         document.getElementById("next").hidden = false

@@ -8,6 +8,25 @@
 }
 
 /******************************************
+/* ANIMATIONS
+/*******************************************/
+
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(+100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+/******************************************
 /* LAYOUT
 /*******************************************/
 html{
@@ -19,7 +38,11 @@ body{
   font-family: "Source Serif Pro";
   font-size: 1.6rem;
   background-color: gray;
-  margin-top: 4%;
+  background: url("../img/wood.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 2%;
 }
 
 h1{
@@ -40,14 +63,24 @@ h1{
 
 .drinkInfo{
   float:left;
-  width: 50%;
-  height: 600px;
+  width: 45%;
+  margin-left: 5%;
+  background-color: #aaa;
+  border-radius: 10%;
+
+  animation: show 1000ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+
+  opacity: 0;
+
+  transform: rotateX(-90deg);
+  transform-origin: top center;
 }
+
 
 /* Search Bar*/
 
 .search{
-  padding: 0 5% 5%;
+  padding: 0 5% 2%;
 }
 
 .custom-field {
@@ -122,21 +155,22 @@ ul {
 .pics{
   float:left;
   width: 50%;
+  padding-left: 3%;
 }
 
 .pics img{
   display: block;
   margin: auto;
   height:700px;
-  border-radius: 25%;
+  border-radius: 5%;
+  animation: 1.5s ease-out 0s 1 slideInFromRight;
 }
 
-.left{
+.movement{
   float:left;
-  text-align: right;
-  margin-top: 100px;
-  padding-right: 5%;
-  width:50%;
+  text-align: center;
+  width:30%;
+  margin: 100px 35% 0;
 }
 
 .left img, .right img{
@@ -148,16 +182,27 @@ ul {
   height:110px;
 }
 
+.left{
+  float: left;
+  margin-left: 30%;
+  padding-right: 7%;
+}
+
 .right{
   float: left;
-  text-align: left;
-  margin-top: 100px;
-  padding-left: 5%;
-  width: 50%;
+  padding-left: 7%;
 }
 
 .right img:hover{
   height:110px;
+}
+
+#prev{
+  padding-right: 5%;
+}
+
+#next{
+  padding-left: 5%;
 }
 
 /******************************************
