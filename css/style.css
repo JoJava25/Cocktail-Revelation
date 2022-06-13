@@ -128,6 +128,7 @@ ul {
   display: block;
   margin: auto;
   height:700px;
+  border-radius: 25%;
 }
 
 .left{
@@ -138,9 +139,9 @@ ul {
   width:50%;
 }
 
-.left img{
+.left img, .right img{
   height:100px;
-  transition: height 1s .25s;
+  transition: height .50s .25s;
 }
 
 .left img:hover{
@@ -153,11 +154,6 @@ ul {
   margin-top: 100px;
   padding-left: 5%;
   width: 50%;
-}
-
-.right img{
-  height:100px;
-  transition: height 1s .25s;
 }
 
 .right img:hover{

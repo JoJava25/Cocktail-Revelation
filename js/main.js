@@ -10,12 +10,19 @@ let drinkAmmount = 0
 
 document.getElementById('search').addEventListener ('click', getDrink)
 document.getElementById('search').addEventListener ('click', resetCurrent)
+document.getElementById('drinkInput').addEventListener ('keypress', function (e) {
+    if (e.code === "Enter") {
+       getDrink()
+       resetCurrent()
+    }
+})
 
 document.getElementById('next').addEventListener ('click', getDrink)
 document.getElementById('next').addEventListener ('click', addCurrent)
 
 document.getElementById('prev').addEventListener ('click', getDrink)
 document.getElementById('prev').addEventListener ('click', subCurrent)
+
 
 function getDrink(){
     let drink = document.querySelector('input').value.replaceAll(' ', '%20')
