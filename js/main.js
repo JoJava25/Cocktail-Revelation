@@ -58,12 +58,14 @@ function getDrink(){
         }else{}
     
     })
-
-    document.getElementById("prev").hidden = false
-    document.getElementById("next").hidden = false
+    
     document.querySelector(".ingredients").hidden = false
     document.querySelector(".instructions").hidden = false
-
+    function delayShow(){
+        document.getElementById("prev").hidden = false
+        document.getElementById("next").hidden = false
+    }
+    setTimeout(delayShow, 50)
     })
     .catch(err => {
         console.log(`error ${err}`)
