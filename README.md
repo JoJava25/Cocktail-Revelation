@@ -1,9 +1,9 @@
 # Winchesters Tour Guide to Cocktails
 A web app that allows the user to discover new cocktails/mixed drinks and learn how to make them.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+https://jojava25.github.io/Winchesters-Tour-Guide-to-Cocktails/
 
-![alt tag](https://thumbs.gfycat.com/GleefulSneakyBrahmancow-size_restricted.gif)
+![site gif](https://thumbs.gfycat.com/GleefulSneakyBrahmancow-size_restricted.gif)
 
 ## How It's Made:
 
