@@ -9,7 +9,7 @@ https://jojava25.github.io/Winchesters-Tour-Guide-to-Cocktails/
 
 **Tech used:** HTML, CSS, JavaScript
 
-When the user searches the app plugs that value into a cocktail API and returns a JSON object with every possible drink from the search. the app plugs the information from the drink into the DOM and allows the user to cycle through different drinks that are related to the search. 
+When the user searches the app plugs that value into a cocktail API and returns a JSON object with every possible drink from the search. The app plugs the information from the drink into the DOM and allows the user to cycle through different drinks that are related to the search. 
 
 ## Optimizations
 
